@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- TODO: Include Google Fonts file here -->
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+
+    <link href="Style/header.css" rel="stylesheet">
+    <link href="Style/index.css" rel="stylesheet">
+
+
+</head>
+
+<body background="images/background.jpg">
+
+
+    <!--Sign up-->
+    <div class="signUp">
+        <div class="signUpForm">
+            <span class="signUpClose">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+
+            <form>
+                <p>Full Name</p>
+                <input type="text" placeholder="Enter Full Name" required>
+
+                <p>Username</p>
+                <input type="text" placeholder="Enter Username" required>
+
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+
+                <p> Confirm Password</p>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <input type="submit" class="suBtn" value="Sign up">
+            </form>
+
+        </div>
+    </div>
+
+    <!--Sign in-->
+    <div class="signIn">
+        <div class="signInForm">
+            <span class="signInClose">&times;</span>
+            <h1>Welcome Back!</h1>
+            <hr>
+
+            <form>
+                <p>Username</p>
+                <input type="text" placeholder="Enter Username" required>
+
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+
+                <input type="submit" class="siBtn" value="Submit">
+
+            </form>
+            <h3 class="notAMember">Not a member?<a class="ggwp"><span> Sign up </span></a></h3>
+
+        </div>
+    </div>
+
+    <!-- Post Model -->
+    <div class="postModel">
+        <div class="createPost">
+            <span class="close">&times;</span>
+            <h1>Pen your post</h1>
+            <hr>
+            <form>
+                <p>Title:</p>
+                <input type="text">
+
+                <p>Content:</p>
+                <textarea></textarea>
+                <input type="submit" class="s_button" value="Create">
+
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <button class="topButtons" id="btn">Sign Up</button>
+        <button class="topButtons">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore, Imagine, Create</p>
+    </div>
+    <div id="post_buttons">
+        <a href="html/bloglist.html"><button class="post_in_buttons">All Posts</button></a>
+        <button id="createPostBtn" class="post_in_buttons">Create Posts</button>
+    </div>
+    <script src="Script/index.js"></script>
+    <script src="Script/header.js"></script>
+</body>
+
+</html>
