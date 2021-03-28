@@ -9,12 +9,12 @@ body {
 }
 
 .allPost .sample {
+    background-color: white;
+    overflow: hidden;
     margin: 10px 20px 10px 20px;
     width: 40%;
     border-radius: 20px;
     display: flex;
-    background-color: white;
-    overflow: hidden;
 }
 
 .allPost .sample h1 {
@@ -31,10 +31,6 @@ body {
     padding: 10px 20px;
 }
 
-.allPost .sample .content img {
-    float: right;
-}
-
 .allPost .sample .content .delete {
     cursor: pointer;
 }
@@ -43,6 +39,10 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     height: 55px;
+}
+
+.allPost .sample .content img {
+    float: right;
 }
 
 .confirmationModel {
@@ -58,17 +58,13 @@ body {
 }
 
 .confirmationModel .confirmationBox {
-    border: none;
-    padding: 15px 20px;
-    background-color: #dddddd;
     color: black;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     width: 30%;
+    border: none;
+    padding: 15px 20px;
+    background-color: #dddddd;
     text-align: center;
-}
-
-.confirmationModel .confirmationBox h1 {
-    font-size: 18px;
 }
 
 .confirmationModel .confirmationBox .boxButtons {
@@ -82,6 +78,10 @@ body {
     padding: 2% 10%;
     color: white;
     border: none;
+}
+
+.confirmationModel .confirmationBox h1 {
+    font-size: 18px;
 }
 
 .confirmationModel .confirmationBox .boxButtons #yes {
