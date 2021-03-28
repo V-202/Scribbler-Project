@@ -3,14 +3,14 @@ body {
     background-size: cover;
 }
 
-#post_buttons {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
 }
 
-.post_in_buttons {
+.postsBtn {
     margin: 10px;
     width: 150px;
     height: 40px;
@@ -62,7 +62,7 @@ body {
     font-size: 20px;
 }
 
-.createPost form .s_button {
+.createPost form .postbtn {
     justify-content: center;
     background-color: #4CAF50;
     width: 40%;
