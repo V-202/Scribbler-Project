@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+
+    <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="../Style/post.css">
+</head>
+
+<body>
+
+    <!-- Sign up Model -->
+    <div class="signUp">
+        <div class="signUpForm">
+            <span class="signUpClose">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+
+            <form>
+                <p>Full Name</p>
+                <input type="text" placeholder="Enter Full Name" required>
+
+                <p>Username</p>
+                <input type="text" placeholder="Enter Username" required>
+
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+
+                <p> Confirm Password</p>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <input type="submit" class="suBtn" value="Sign up">
+            </form>
+
+        </div>
+    </div>
+
+
+    <!--Sign in page-->
+    <div class="signIn">
+        <div class="signInForm">
+            <span class="signInClose">&times;</span>
+            <h1>Welcome Back!</h1>
+            <hr>
+
+            <form>
+                <p>Username</p>
+                <input type="text" placeholder="Enter Username" required>
+
+                <p>Password</p>
+                <input type="password" placeholder="Enter Password" required>
+
+                <input type="submit" class="siBtn" value="Submit">
+
+            </form>
+            <h3 class="notAMember">Not a member?<a class="ggwp"><span> Sign up </span></a></h3>
+
+        </div>
+    </div>
+
+
+    <div class="header">
+        <button class="topButtons" id="btn">Sign Up</button>
+        <button class="topButtons">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore, Imagine, Create</p>
+    </div>
+
+
+    <div class="container">
+        <h1 class="heading">The legacy of Jimi Hendrix</h1>
+        <textarea type="text" id="changes"></textarea>
+        <div class="editName">
+            <p id="author">JIMI</p>
+            <button class="edit" onclick="edit_post()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png"/></button>
+            <!--On changes made the button shall update-->
+            <button class="save" onclick="save_post()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png"/></button>
+        </div>
+        <p class="sampleBody">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Facilisi etiam dignissim diam quis enim lobortis
+            scelerisque fermentum dui. Ut ornare lectus sit amet est placerat in. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Turpis massa tincidunt dui ut ornare lectus sit amet. A diam sollicitudin tempor id eu nisl. Et netus et
+            malesuada fames ac. Lobortis scelerisque fermentum dui faucibus in ornare quam. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Phasellus faucibus scelerisque
+            eleifend donec pretium vulputate sapien. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Ultricies tristique nulla aliquet enim. Pretium viverra suspendisse potenti nullam ac tortor. Nibh venenatis cras sed felis eget velit aliquet.
+            Diam quam nulla porttitor massa id neque. In massa tempor nec feugiat nisl pretium. Sem integer vitae justo eget magna fermentum. Sem viverra aliquet eget sit. In egestas erat imperdiet sed euismod nisi porta. Eleifend donec pretium vulputate
+            sapien nec sagittis. Nibh cras pulvinar mattis nunc sed blandit. Tempus quam pellentesque nec nam. Amet risus nullam eget felis eget nunc lobortis. Nullam eget felis eget nunc lobortis. Feugiat in fermentum posuere urna nec tincidunt. Rhoncus
+            est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Dignissim sodales ut eu sem integer vitae justo eget. Placerat in egestas erat imperdiet sed euismod nisi porta. At volutpat diam ut venenatis tellus in metus vulputate eu.
+            Eu non diam phasellus vestibulum. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Ut porttitor leo a diam sollicitudin tempor id. Amet volutpat consequat mauris nunc. Purus non enim praesent elementum facilisis. In est ante in
+            nibh mauris cursus mattis molestie a. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Vestibulum lorem sed risus ultricies tristique nulla. Congue quisque egestas diam in arcu cursus euismod quis viverra. Nisi vitae
+            suscipit tellus mauris a diam maecenas sed. Morbi tempus iaculis urna id volutpat lacus laoreet non. Elementum pulvinar etiam non quam lacus suspendisse. Vitae congue eu consequat ac felis donec. Libero enim sed faucibus turpis in eu. Nulla
+            facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Accumsan in nisl nisi scelerisque. Neque convallis a cras semper auctor neque vitae tempus quam. Ullamcorper sit amet risus nullam eget felis eget nunc. Mauris cursus
+            mattis molestie a iaculis at erat pellentesque.
+
+        </p>
+        <textarea id="sampleEdit"></textarea>
+        <button class="like" onclick="like_post()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png"/>    Like</button>
+        <p id="count">Be first one to like this!</p>
+        <textarea id="comment" placeholder="leave a comment..."></textarea><br>
+        <button id="comments" onclick="post_comment()">Comment</button>
+        <h3 id="header">ALL Comments</h3>
+        <div id="allComments">
+
+        </div>
+    </div>
+
+    <script src="../Script/post.js"></script>
+    <script src="../Script/header.js"></script>
+</body>
+
+</html>

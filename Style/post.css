@@ -1,0 +1,105 @@
+.container {
+    margin: 0 5%;
+}
+
+.container .heading {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Arial', cursive;
+}
+
+.editName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .editName #author {
+    font-size: 20px;
+    font-family: 'Aclonica', sans-serif;
+}
+
+.container .editName .edit {
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+}
+
+.container .editName .save {
+    display: none;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+}
+
+#sampleEdit {
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+    border: 2px solid lightblue;
+    font-family: 'Times new roman', cursive;
+    font-size: 20px;
+}
+
+.like {
+    margin-top: 10px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 40px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+    border-radius: 5px;
+}
+
+#comment {
+    height: 100px;
+    width: 60%;
+}
+
+#comments {
+    margin-top: 10px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 40px;
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
+}
+
+#changes {
+    margin: 0px auto;
+    display: none;
+    border: 2px solid lightpink;
+    font-family: 'Handlee', cursive;
+    height: 34px;
+    overflow: hidden;
+    width: auto;
+    font-size: 30px;
+}
+
+.container #allComments {
+    width: 60%;
+    padding: 20px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sampleBody {
+    font-family: 'Times new roman', cursive;
+    font-size: 20px;
+}
