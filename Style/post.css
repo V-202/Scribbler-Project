@@ -2,43 +2,69 @@
     margin: 0 5%;
 }
 
-.container .heading {
+#sampleBody {
+    font-family: 'Segoe Print', cursive;
+    font-size: 20px;
+}
+
+.container #containerHead {
     text-align: center;
     font-size: 30px;
-    font-family: 'Arial', cursive;
+    font-family: 'Segoe Print', cursive;
+}
+
+#changes {
+    margin: 0px auto;
+    display: none;
+    border: 2px solid lightpink;
+    font-family: 'Handlee', cursive;
+    height: 34px;
+    overflow: hidden;
+    width: auto;
+    font-size: 30px;
 }
 
 .editName {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .container .editName #author {
     font-size: 20px;
-    font-family: 'Aclonica', sans-serif;
+    font-family: 'MV Boli', sans-serif;
 }
 
-.container .editName .edit {
+.container .editName #edit {
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
     height: 40px;
     font-size: 15px;
     padding: 5px 20px;
     background-color: #ff3385;
     color: white;
-    border: none;
-    box-shadow: 2px 5px 10px #ff3385;
 }
 
-.container .editName .save {
+.container .editName #save {
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 10px #ff3385;
     display: none;
     height: 40px;
     font-size: 15px;
     padding: 5px 20px;
     background-color: #ff3385;
-    color: white;
-    border: none;
-    box-shadow: 2px 5px 10px #ff3385;
+}
+
+.container #allComments .comment_content {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #sampleEdit {
@@ -46,11 +72,11 @@
     display: none;
     margin-top: 10px;
     border: 2px solid lightblue;
-    font-family: 'Times new roman', cursive;
+    font-family: 'Segoe Print', cursive;
     font-size: 20px;
 }
 
-.like {
+.likeBtn {
     margin-top: 10px;
     height: 40px;
     font-size: 20px;
@@ -78,17 +104,6 @@
     box-shadow: 2px 5px 10px #ff3385;
 }
 
-#changes {
-    margin: 0px auto;
-    display: none;
-    border: 2px solid lightpink;
-    font-family: 'Handlee', cursive;
-    height: 34px;
-    overflow: hidden;
-    width: auto;
-    font-size: 30px;
-}
-
 .container #allComments {
     width: 60%;
     padding: 20px;
@@ -97,9 +112,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.sampleBody {
-    font-family: 'Times new roman', cursive;
-    font-size: 20px;
 }
